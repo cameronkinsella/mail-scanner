@@ -1,3 +1,6 @@
+from flask import jsonify
+
+
 def postImage(request):
     """Responds to any HTTP request.
     Args:
@@ -8,9 +11,11 @@ def postImage(request):
         `make_response <http://flask.pocoo.org/docs/1.0/api/#flask.Flask.make_response>`.
     """
     request_json = request.get_json()
+
+
     if request.args and 'message' in request.args:
-        return request.args.get('message')
+        return jsonify(request.args.get('message'))
     elif request_json and 'message' in request_json:
-        return request_json['message']
+        return jsonify(request_json['message'])
     else:
-        return f'Hello World!'
+        return jsonify('Hello World!')
