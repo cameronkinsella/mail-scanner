@@ -1,0 +1,11 @@
+{
+    "name": "node-red-project",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "node-red-contrib-google-cloud": "0.0.14",
+        "node-red-contrib-uibuilder": "~2.0.7",
+        "node-red-dashboard": "~2.19.4"
+    }
+}

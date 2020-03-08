@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title><var>hi</var></title>
+
+        <!-- Fonts -->
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+
+        <!-- Styles -->
+        <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .title {
+                font-size: 36px;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-center position-ref full-height">
+            <div class="content">
+                <div class="title">
+                    
+
+<div class="container">
+    <div class = "row">
+        <div class="col-3 p-6">
+            <img src="https://image.freepik.com/free-vector/envelope-letter-with-heart-isolated-icon_25030-30175.jpg" style="height: 300px">
+
+        </div>
+
+        <div id='app' class="col-9 pt-5">
+            <div><h1>You Got Mail!</h1></div>
+            <div><strong>From </strong><var>{{msgRecvd['name']}}</var></div>
+                <div><strong>Address </strong><var>{{msgRecvd['address']}}</var></div>
+                <div><strong>Postal Code </strong><var>{{msgRecvd['postal']}}</var>
+
+            </div>
+
+        </div>
+             <img src="" alt="">
+</div>
+
+                </div>
+            </div>
+            
+            
+            <!-- These MUST be in the right order. Note no leading / -->
+    <!-- REQUIRED: Socket.IO is loaded only once for all instances
+                     Without this, you don't get a websocket connection -->
+    <script src="../uibuilder/vendor/socket.io/socket.io.js"></script>
+
+    <script src="../uibuilder/vendor/vue/dist/vue.js"></script> <!-- dev version with component compiler -->
+    <!-- <script src="../uibuilder/vendor/vue/dist/vue.min.js"></script>   prod version with component compiler -->
+    <!-- <script src="../uibuilder/vendor/vue/dist/vue.runtime.min.js"></script>   prod version without component compiler -->
+    <script src="../uibuilder/vendor/bootstrap-vue/dist/bootstrap-vue.js"></script>
+
+    <!-- REQUIRED: Sets up Socket listeners and the msg object -->
+    <!-- <script src="./uibuilderfe.js"></script>   //dev version -->
+    <script src="./uibuilderfe.min.js"></script> <!--    //prod version -->
+    <!-- OPTIONAL: You probably want this. Put your custom code here -->
+    <script src="./index.js"></script>
+
+        </div>
+</html>
