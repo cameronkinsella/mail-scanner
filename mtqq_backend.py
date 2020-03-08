@@ -24,14 +24,13 @@ stringToBeSent = 'aaaaaaaaaaaa'
 import paho.mqtt.client as mqtt #import the client1
 def updateMail(gibberish):
 
-
+    words = gibberish.split(',')
+    word = ' '.join(words)
     broker_address="test.mosquitto.org"
     client = mqtt.Client("P1") #create new instance
     client.connect(broker_address) #connect to broker
     client.subscribe("home/nodered")
-    client.publish("home/nodered", name+' '+address+' '+state+' '+postalCode)
-
-updateMail('kjdskjds,ss,s,s')
+    client.publish("home/nodered", word)
 
 
 
