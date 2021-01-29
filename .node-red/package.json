@@ -6,6 +6,6 @@
     "dependencies": {
         "node-red-contrib-google-cloud": "0.0.14",
         "node-red-contrib-uibuilder": "~2.0.7",
-        "node-red-dashboard": "~2.19.4"
+        "node-red-dashboard": "~2.26.2"
     }
 }
